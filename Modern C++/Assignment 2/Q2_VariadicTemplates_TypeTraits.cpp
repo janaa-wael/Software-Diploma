@@ -12,6 +12,7 @@ typename enable_if<(is_integral<Args>::value && ...), int>::type
 print(Args... args)
 {
     cout << "Integral args" << endl;
+    (cout << ... << args) << endl;
     return (args + ...) ;
 }
 
@@ -21,6 +22,7 @@ typename enable_if<(is_floating_point<Args>::value && ...), float>::type
 print(Args... args)
 {
     cout <<"Floating point args" << endl;
+    (cout << " " << ... << args) << endl;
     return (args + ...);
 }
 int main()
