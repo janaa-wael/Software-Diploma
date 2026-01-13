@@ -11,7 +11,11 @@ constexpr int factorial(int n)
 
 int main()
 {
-    cout << "Factorial of 4 is: " << factorial(4) << endl;
-    cout << "Factorial of 5 is: " << factorial(5) << endl;
-    cout << "Factorial of 6 is: " << factorial(6) << endl;
+    constexpr int size = 10;
+    int arr[size]{3,4,5,6};
+
+    for(auto a : arr)
+    {
+        cout << "Factorial of " << a << " is: " << factorial(a) << endl;
+    }
 }
