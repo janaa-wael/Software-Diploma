@@ -11,7 +11,7 @@ constexpr int factorial(int n)
 
 int main()
 {
-    constexpr int size = 10;
+    constexpr int size = 4;
     int arr[size]{3,4,5,6};
 
     for(auto a : arr)
