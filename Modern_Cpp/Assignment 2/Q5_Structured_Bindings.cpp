@@ -4,6 +4,11 @@
 
 using namespace std;
 
+class Database{
+    public:
+    pair <string,int> p {"Sam",20};
+};
+
 
 int main()
 {
@@ -20,4 +25,12 @@ int main()
     cout << "Integer = " << a << endl;
     cout << "Char = " << b << endl;
     cout << "Double = " << c << endl;
+
+    Database d;
+
+    auto [name,age] = d.p;
+    cout << "Custom Class Pair Attribute Values " << endl;
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+
 }
